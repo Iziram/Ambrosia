@@ -8,7 +8,7 @@ hideInToc: true
 
 # Chaussettes et Sockets
 
-## <mdi-connection /> Interconnexion d'applications et de services
+## <mdi-connection /> Interconnexion d'applications et de services (IPC)
 
 ---
 src: ./pages/about-me.md
@@ -19,5 +19,11 @@ src: ./pages/toc.md
 hideInToc: true
 ---
 ---
-src: ./pages/reminder.md
+src: ./pages/wut-socket.md
+---
+---
+src: ./pages/socket-families.md
+---
+---
+src: ./pages/socket-env.md
 ---
