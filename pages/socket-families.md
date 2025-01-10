@@ -124,4 +124,19 @@ server_addr.sun_path[sizeof(server_addr.sun_path) - 1] = '\0'; // Terminateur nu
 
 ## AF_ VSOCK
 
-...
+- Socket virtuel ( Intégré dans le noyau Linux par VMWare)
+- Utilisé pour la communication entre un hyperviseur et ses machines virtuelles
+- Quasiment pas de configuration à faire
+
+
+```c
+struct sockaddr_in {
+    sa_family_t    sin_family;    // Famille d'adresses : AF_INET (2 octet)
+    in_port_t      sin_port;      // Port du service (4 octets)
+    struct in_addr sin_addr;      // CID (4 octets)
+    char           sin_zero[6];   // Remplissage pour compatibilité avec struct sockaddr (6 octets)
+};
+```
+
+
+> <mdi-warning/> Attention, VSOCK fonctionne sans configuration Host <-> Guest. Mais Guest <-> Guest n'est pas disponible par défaut

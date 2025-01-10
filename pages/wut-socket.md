@@ -45,7 +45,8 @@ Model OSI
 </div>
 
 ---
-
+hideInToc: true
+---
 # Socket quésaco ?
 
 ## Instancier un socket

@@ -38,3 +38,7 @@
 ---
 
 ## Démo (Yay du mouvement)
+
+Bon la théorie c'est bien mais la pratique c'est cool.
+
+On se retrouve sur un terminal
